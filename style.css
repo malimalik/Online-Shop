@@ -75,6 +75,8 @@ input[type="search"]{
   }
   .price{
       margin-left: 55px;
+      font-size:1rem;
+      font-variant-numeric: slashed-zero;
   }
 
 .search-bar img:first-child {
@@ -128,6 +130,9 @@ input[type="search"]{
 
 }
 
+.transaction{
+
+}
 
 .trending h1:first-child{
     display:block;
@@ -183,13 +188,31 @@ header{
 
 button[type="clickableButton"].add-to-cart{
     margin-left: 50px;
-
+    font-size: 1rem;
+    font-weight: 100;
+    color: black;
+    background-color: tan;
+    border: 0.1rem solid tan;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
 
 }
+
+button[type="clickableButton"].add-to-cart:hover{
+    opacity: 0.7;
+
+}
+
+
+
+
 .suggested img{
     margin-top:10px;
     margin-bottom:15px;
+    box-shadow: inset;
 }
+  
 
 /*Product Styling*/
 
