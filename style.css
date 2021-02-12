@@ -23,6 +23,7 @@ h1,h2,h3{
     margin-left:17px;
     color:black;
 }
+
 ul, li{
     margin-left:17px;
 
@@ -54,7 +55,7 @@ a {
     
 }
 
-
+/*Styling for the search box*/
 input[type="search"]{
     min-width: 300px;
     font-size: 14px;
@@ -73,23 +74,34 @@ input[type="search"]{
     height: 25px;
 
   }
+
+
+
+.image-container2{
+    margin-left:70px;
+    opacity: 0.9;
+
+}
+
+.image-container2:hover{
+ 
+  opacity: 1;
+
+}
+
+  /*Price styling for the trending items */
+
   .price{
       margin-left: 120px;
       font-size:1rem;
       font-variant-numeric: slashed-zero;
   }
 
-  /*Price for the suggested items */
+  /*Price styling for the suggested items */
 
   .price-suggested{
       margin-left:60px;
   }
-
-  .image-container2{
-      margin-left:70px;
-
-  }
-
 
 
 
@@ -124,6 +136,8 @@ input[type="search"]{
     box-shadow: 0px 0px 0px 0.4rem rgba(0, 0, 0, 0.2);
 }
 
+/*Navigation Bar Styling.*/
+
 .topnav a{
     color:grey;
     align-items:center;
@@ -131,7 +145,7 @@ input[type="search"]{
     text-align: right;
     writing-mode: horizontal-tb;
     text-decoration: none;
-    font-weight: bold;
+    font-weight:italic;
     
 
 
@@ -141,12 +155,11 @@ input[type="search"]{
     text-decoration: none;
     align-items:center;
     display:inline-block;
+    font-style:italic;
 
 }
 
-.transaction{
 
-}
 
 .trending h1:first-child{
     display:block;
@@ -167,6 +180,12 @@ input[type="search"]{
 }
 .name img{
     margin-left:70px;
+    opacity:0.9
+}
+
+.name img:hover{
+    margin-left:70px;
+    opacity:1;
 }
 
 header{
@@ -176,6 +195,7 @@ header{
     gap:1rem;
     padding:1rem;
 }
+
 header > * {
     margin: 0.2rem 0.2rem 0.2rem 0.2rem;
   }
@@ -200,20 +220,9 @@ header{
     gap:0;
 }
 
-button[type="clickableButton"].add-to-cart{
-    margin-left: 50px;
-    font-size: 1rem;
-    font-weight: 100;
-    color: black;
-    background-color: tan;
-    border: 0.1rem solid tan;
-    padding: 0.7rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-
-}
 
 
+/* Product Button Styling*/
 button[type="clickableButton"].transaction{
     margin-left: 50px;
     font-size: 1rem;
@@ -231,21 +240,6 @@ button[type="clickableButton"].transaction:hover{
     opacity: 0.7;
 
 }
-
-button[type="clickableButton"].add-to-cart:hover{
-    opacity: 0.7;
-
-}
-
-
-
-
-.suggested img{
-    margin-top:10px;
-    margin-bottom:15px;
-    box-shadow: inset;
-}
-  
 
 /*Product Styling*/
 
@@ -308,4 +302,60 @@ button[type="clickableButton"].add-to-cart:hover{
       max-width: 46ch;
     }
 
+  }
+
+.suggested img:hover{
+    opacity:1;
+
+}
+
+
+
+
+
+
+
+button[type="clickableButton"].add-to-cart{
+    margin-left: 50px;
+    font-size: 1rem;
+    font-weight: 100;
+    color: black;
+    background-color: tan;
+    border: 0.1rem solid tan;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+button[type="clickableButton"].add-to-cart:hover{
+    opacity: 0.7;
+
+}
+
+
+
+
+.suggested img{
+    margin-top:10px;
+    margin-bottom:15px;
+    box-shadow: inset;
+    opacity: 0.9;
+}
+  
+
+
+
+
+  /* Copyright Styling */
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 100;
+  }
+  
+  .copyright > span {
+    font-size: 1.2rem;
   }
